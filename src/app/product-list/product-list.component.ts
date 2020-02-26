@@ -12,8 +12,8 @@ export class ProductListComponent {
   share() {
     window.alert('The product has been shared!');
   }
-  onNotify(){
-    window.alert('Notification activated');
+  onNotify(product){
+    window.alert('Notification activated! '+'Unit Price is: '+product.price);
   }
 }
 
