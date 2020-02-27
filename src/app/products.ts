@@ -16,8 +16,8 @@ export const products = [
   },
   {
     name: 'Custom Phone',
-    price: '$$$',
-    description: null
+    price: 100,
+    description: 'This is a custom built phone according to client requirement'
   }
 ];
 
