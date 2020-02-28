@@ -9,3 +9,23 @@
 <div class="cart-item" *ngIf="cartItems.length==0">
   <span>Cart is Empty!</span>
 </div>
+<!-- checkout form -->
+<form [formGroup]="checkOutForm" (ngSubmit)="onSubmit(checkOutForm.value)" *ngIf="cartItems.length>0">
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+
+</form>
